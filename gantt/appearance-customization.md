@@ -287,27 +287,27 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/how-to splitter-cs1/index.ts %}
+{% include code-snippet/gantt/how-to-splitter-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to splitter-cs1/index.html %}
+{% include code-snippet/gantt/how-to-splitter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/how-to splitter-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-splitter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/how-to splitter-cs1/index.js %}
+{% include code-snippet/gantt/how-to-splitter-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to splitter-cs1/index.html %}
+{% include code-snippet/gantt/how-to-splitter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/how-to splitter-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-splitter-cs1" %}
 {% endif %}
 
 ### Change splitter position dynamically

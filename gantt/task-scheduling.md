@@ -206,27 +206,27 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/how-to changeworkweek-cs2/index.ts %}
+{% include code-snippet/gantt/how-to-changeworkweek-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to changeworkweek-cs2/index.html %}
+{% include code-snippet/gantt/how-to-changeworkweek-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/how-to changeworkweek-cs2" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-changeworkweek-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/how-to changeworkweek-cs2/index.js %}
+{% include code-snippet/gantt/how-to-changeworkweek-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to changeworkweek-cs2/index.html %}
+{% include code-snippet/gantt/how-to-changeworkweek-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/how-to changeworkweek-cs2" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-changeworkweek-cs2" %}
 {% endif %}
 
 > By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
