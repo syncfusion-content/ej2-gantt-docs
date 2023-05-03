@@ -92,27 +92,27 @@ The following code examples show how the scroll To Date method works in Gantt:
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/how-to scrollToDate-cs1/index.ts %}
+{% include code-snippet/gantt/how-to-scrollToDate-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to scrollToDate-cs1/index.html %}
+{% include code-snippet/gantt/how-to-scrollToDate-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/how-to scrollToDate-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-scrollToDate-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/how-to scrollToDate-cs1/index.js %}
+{% include code-snippet/gantt/how-to-scrollToDate-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to scrollToDate-cs1/index.html %}
+{% include code-snippet/gantt/how-to-scrollToDate-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/how-to scrollToDate-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-scrollToDate-cs1" %}
 {% endif %}
 
 ## Set the vertical scroll position
@@ -123,25 +123,25 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/how-to setscrolltop-cs1/index.ts %}
+{% include code-snippet/gantt/how-to-setscrolltop-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to setscrolltop-cs1/index.html %}
+{% include code-snippet/gantt/how-to-setscrolltop-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/how-to setscrolltop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-setscrolltop-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/how-to setscrolltop-cs1/index.js %}
+{% include code-snippet/gantt/how-to-setscrolltop-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to setscrolltop-cs1/index.html %}
+{% include code-snippet/gantt/how-to-setscrolltop-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/how-to setscrolltop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-setscrolltop-cs1" %}
 {% endif %}

@@ -17,27 +17,27 @@ In Gantt, it is possible to drag a record from another component and drop it in 
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/how-to draganddrop-cs1/index.ts %}
+{% include code-snippet/gantt/how-to-draganddrop-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to draganddrop-cs1/index.html %}
+{% include code-snippet/gantt/how-to-draganddrop-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/how-to draganddrop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-draganddrop-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/how-to draganddrop-cs1/index.js %}
+{% include code-snippet/gantt/how-to-draganddrop-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/how-to draganddrop-cs1/index.html %}
+{% include code-snippet/gantt/how-to-draganddrop-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/how-to draganddrop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/how-to-draganddrop-cs1" %}
 {% endif %}
 
 The following screenshot shows dropping record from another component in to Gantt, and **Rose Fuller** is added as resource for the task **Develop floor plan estimation**.
