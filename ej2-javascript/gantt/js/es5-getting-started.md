@@ -79,7 +79,7 @@ Refer to the following code to find the location of Gantt script and style file.
 After copying the files, then you can refer the gantt's scripts and styles into the `index.html` file.
 The below html code example shows the minimal dependency for Gantt.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -150,7 +150,7 @@ Refer to the Gantt's CDN links as follows.
 
 The below html code example shows the dependency of gantt.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -213,7 +213,7 @@ Now, you can add the Gantt control to the application. For getting started, add 
 
 In this document context, `ej2.min.js` and `material.css` which includes all the Essential JS 2 components and its dependent scripts and theme files are used.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
@@ -279,7 +279,7 @@ ganttChart.appendTo('#Gantt');
 
 Bind data with the Gantt control by using the [`dataSource`](../api/gantt/#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
 
-```
+```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>

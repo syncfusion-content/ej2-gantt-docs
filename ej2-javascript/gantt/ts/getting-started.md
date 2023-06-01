@@ -142,7 +142,7 @@ let gantt: Gantt = new Gantt({
 
 Now, add an HTML div element to act as the gantt element in `index.html` using the following code.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -176,7 +176,7 @@ Now, add an HTML div element to act as the gantt element in `index.html` using t
 
 Bind data with the Gantt control by using the [`dataSource`](../api/gantt/#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
