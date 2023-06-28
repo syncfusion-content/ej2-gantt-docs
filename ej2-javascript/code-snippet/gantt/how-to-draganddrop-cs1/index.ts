@@ -20,6 +20,10 @@ let treeObj: TreeView = new TreeView({
           var index = ganttObj.treeGrid.getRows().indexOf(gridEle);
           ganttObj.selectRow(index);
         }
+        if (chartEle) {
+            var index = chartEle.ariaRowIndex;
+            ganttChart.selectRow(Number(index));
+        }
         let record: any = args.draggedNodeData;
         let selectedData = ganttObj.flatData[ganttObj.selectedRowIndex];
         let selectedDataResource = selectedData.taskData.resources;
