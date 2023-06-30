@@ -1,6 +1,4 @@
-import { Gantt, Toolbar, PdfExport, Selection,ExcelExport, PdfExportProperties } from '@syncfusion/ej2-gantt';
-import { GanttData } from 'datasource';
-Gantt.Inject(Toolbar, PdfExport, Selection,ExcelExport);
+
 /**
  * Exporting Blob data
  */
