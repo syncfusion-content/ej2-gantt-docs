@@ -28,8 +28,8 @@ var menuOptions = {
 
 var menuObj = new ej.navigations.ContextMenu(menuOptions, '#contextmenu');
 
-function select(args: any) {
-  let gantt: any = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
+function select(args) {
+  let gantt = (document.getElementsByClassName('e-gantt')[0]).ej2_instances[0];
   if (args.item.text === "Bottom") {
     gantt.editSettings.newRowPosition = "Bottom";
     gantt.openAddDialog();
