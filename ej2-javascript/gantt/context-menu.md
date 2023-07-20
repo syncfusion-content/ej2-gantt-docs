@@ -15,7 +15,7 @@ The Gantt control allows you to perform quick actions by using context menu. Whe
 
 To use the context menu, inject the [`ContextMenu`](../api/gantt/#contextmodule) module into the Gantt control.
 
-The default items are listed in the following table.
+The default items are listed in the following table
 
 Items| Description
 ----|----
