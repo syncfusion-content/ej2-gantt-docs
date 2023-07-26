@@ -236,3 +236,34 @@ The following code example shows how to enable the predecessor validation dialog
 
 {% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs5" %}
 {% endif %}
+
+## Show/Hide dependency line by dynamic
+
+By default, the dependency line is rendered in the Gantt Chart. However, if you want to show or hide the dependency line, add a dynamic button by using the change event and getting the class `.e-gantt-dependency-view-container.` Then, set the `visibility` style to `hidden.`
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/predecessor-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/predecessor-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/predecessor-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/predecessor-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/predecessor-cs6" %}
+{% endif %}
