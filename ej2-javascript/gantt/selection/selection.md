@@ -119,7 +119,7 @@ You can clear the selected cells and selected rows by using a method called [`cl
 
 ## Get selected row indexes and records
 
-You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt/selection/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt/selection/#getSelectedRecords) method, you can get the selected record details.
+You can get the selected row indexes by using the [`getSelectedRowIndexes`](../../api/gantt/selection/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../../api/gantt/selection/#getSelectedRecords) method, you can get the selected record details.
 
 {% if page.publishingplatform == "typescript" %}
 
