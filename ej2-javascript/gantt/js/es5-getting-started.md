@@ -23,7 +23,6 @@ Following is the list of dependencies to use the Gantt with all features:
     |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-buttons
     |-- @syncfusion/ej2-popups
-
     |-- @syncfusion/ej2-navigations
     |-- @syncfusion/ej2-lists
     |-- @syncfusion/ej2-dropdowns
@@ -549,4 +548,4 @@ Output will be displayed as follows.
 
 ## Deploy the application
 
-The Essential JS 2 Gantt control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in Gantt and hence you should avoid to use them in production. You are strongly recommend to generate script files to use in production using the Syncfusion **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com) for Essential JS 2. CRG will allow you generate the bundled script for the currently enabled features in Gantt.
+The Essential JS 2 Gantt control features are segregated into individual feature-wise modules. The [Essential Studio JavaScript (Essential JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contains code for all features used in Gantt and hence you should avoid to use them in production. You are strongly recommend to generate script files to use in production using the Syncfusion **Custom Resource Generator**[`(CRG)`](https://crg.syncfusion.com/) for Essential JS 2. CRG will allow you generate the bundled script for the currently enabled features in Gantt.
