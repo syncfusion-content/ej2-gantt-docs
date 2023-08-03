@@ -2,7 +2,7 @@
 
 
 import { Gantt, Selection, VirtualScroll } from '@syncfusion/ej2-gantt';
-import { virtualData } from './datasource';
+import { virtualData } from 'datasource.ts';
 
 Gantt.Inject(Selection, VirtualScroll);
 
