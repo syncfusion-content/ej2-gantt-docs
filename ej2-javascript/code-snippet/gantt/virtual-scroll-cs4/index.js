@@ -23,7 +23,7 @@ var ganttChart = new ej.gantt.Gantt({
             if (args.requestType == 'filtering') {
                 if (args.rows != null) {
                     filteredCount =
-                        gantt.treeGrid.filterModule.filteredResult.length;
+                        ganttChart.treeGrid.filterModule.filteredResult.length;
                     var combinedMessage = `Dataset Count: ${datasetCount} Filtered Count: ${filteredCount}`;
                     var countElement = document.getElementById('count-element');
                     if (countElement) {
@@ -33,7 +33,7 @@ var ganttChart = new ej.gantt.Gantt({
             }
         },
         created:function() {
-            datasetCount = gantt.flatData.length;
+            datasetCount = ganttChart.flatData.length;
             var combinedMessage = `Dataset Count: ${datasetCount} Filtered Count: ${filteredCount}`;
             var countElement = document.getElementById('count-element');
             if (countElement) {
