@@ -48,9 +48,9 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 {% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs3" %}
 {% endif %}
 
-## Get filtered data when Virtual Scroll is enabled
+## Get filtered data when virtual scrolling is enabled
 
-While enabling virtual scroll you can get the filtered or sorted record count using `filteredResult` from the filterModule of the treegid inside the `actionComplete` event.
+While enabling virtual scroll you can get the filtered or sorted record count using `filteredResult` from the filterModule of the treegrid inside the `actionComplete` event.
 
 {% if page.publishingplatform == "typescript" %}
 
