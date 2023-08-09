@@ -41,3 +41,34 @@ To highlight the days, inject the [`DayMarkers`](../api/gantt/#daymarkersmodule)
 
 {% previewsample "page.domainurl/code-snippet/gantt/event-markers-cs1" %}
 {% endif %}
+
+## Displaying eventMarkers in stacked manner
+
+When [`eventMarkers`](../api/gantt/eventMarker/) are given in consecutive dates and zoomToFit is performed, they may overlap. To avoid this, you can update the position of the eventMarkers in the [`dataBound`](../api/gantt/#databound) and [`actionComplete`](../api/gantt/#actioncomplete) events so that they are not overlapped and are visible to read.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/event-markers-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/event-markers-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/event-markers-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/event-markers-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/event-markers-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/event-markers-cs2" %}
+{% endif %}
