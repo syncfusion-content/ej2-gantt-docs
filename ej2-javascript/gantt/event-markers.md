@@ -72,3 +72,36 @@ When [`eventMarkers`](../api/gantt/eventMarker/) are given in consecutive dates 
 
 {% previewsample "page.domainurl/code-snippet/gantt/event-markers-cs2" %}
 {% endif %}
+
+# Label Positions in ##Platform_Name## Gantt control
+
+The EJ2 Gantt chart offers powerful features for customizing various labels position within the chart, enabling users to present relevant project information clearly. In EJ2 Gantt chart, labelSettings feature provides three key options for label customization: [`RightLabel`](../api/gantt/labelSettings/#rightlabel), [`TaskLabel`](../api/gantt/labelSettings/#tasklabel), and [`LeftLabel`](../api/gantt/labelSettings/#leftlabel). Label positions can be initialized by using the [`labelSettings`](../api/gantt/labelSettings/) property. 
+
+The following code example shows how to add label positions in the Gantt control.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/label-position-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/label-position-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/label-position-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/label-position-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/label-position-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/label-position-cs1" %}
+{% endif %}
