@@ -1,14 +1,14 @@
 ej.gantt.Gantt.Inject(ej.gantt.Edit);
 var ganttChart = new ej.gantt.Gantt({
         dataSource: GanttData,
-		height:'450px',
-		taskFields: {
+	height:'450px',
+	taskFields: {
             id: 'TaskID',
             name: 'TaskName',
             startDate: 'StartDate',
-			duration: 'Duration',
+	    duration: 'Duration',
             progress: 'Progress',
-			child: 'subtasks'
+	    child: 'subtasks'
         },
 	    eventMarkers: [
             {
