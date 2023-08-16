@@ -105,3 +105,34 @@ The following code example shows how to add label positions in the gantt control
 
 {% previewsample "page.domainurl/code-snippet/gantt/label-position-cs1" %}
 {% endif %}
+
+# Managing event marker overlapping in ##Platform_Name## gantt control
+
+In the EJ2 Gantt control, it is possible to customize multiple [`eventMarkers`](../api/gantt/eventMarker/) for the same date. However, by default, in such scenarios, these markers may overlap each other, resulting in visual clutter. To address this issue, the following sample code demonstrates how to utilize the Gantt dataBound function to obtain label and arrow classes. It performs a loop action to fulfill the current requirement and to avoid overlapping. For further clarification, the code snippet below illustrates the flow of its implementation.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/eventmarkeroverlap-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/eventmarkeroverlap-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/eventmarkeroverlap-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/eventmarkeroverlap-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/eventmarkeroverlap-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/eventmarkeroverlap-cs1" %}
+{% endif %}
