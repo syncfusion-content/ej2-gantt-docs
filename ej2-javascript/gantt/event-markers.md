@@ -73,11 +73,11 @@ When [`eventMarkers`](../api/gantt/eventMarker/) are given in consecutive dates 
 {% previewsample "page.domainurl/code-snippet/gantt/event-markers-cs2" %}
 {% endif %}
 
-# Label Positions in ##Platform_Name## Gantt control
+# Label positions in ##Platform_Name## gantt control
 
-The EJ2 Gantt chart offers powerful features for customizing various labels position within the chart, enabling users to present relevant project information clearly. In EJ2 Gantt chart, labelSettings feature provides three key options for label customization: [`RightLabel`](../api/gantt/labelSettings/#rightlabel), [`TaskLabel`](../api/gantt/labelSettings/#tasklabel), and [`LeftLabel`](../api/gantt/labelSettings/#leftlabel). Label positions can be initialized by using the [`labelSettings`](../api/gantt/labelSettings/) property. 
+The EJ2 Gantt chart offers powerful features for customizing various labels position within the chart, enabling users to present relevant project information clearly. In EJ2 Gantt chart, labelSettings feature provides three key options for label customization: [`rightLabel`](../api/gantt/labelSettings/#rightlabel), [`taskLabel`](../api/gantt/labelSettings/#tasklabel), and [`leftLabel`](../api/gantt/labelSettings/#leftlabel). Label positions can be initialized by using the [`labelSettings`](../api/gantt/labelSettings/) property. 
 
-The following code example shows how to add label positions in the Gantt control.
+The following code example shows how to add label positions in the gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 
