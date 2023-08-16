@@ -12,12 +12,12 @@ var ganttChart = new ej.gantt.Gantt({
         },
 	    eventMarkers: [
             {
-                day: '04/16/2019',
+                day: '04/10/2019',
                 cssClass: 'e-custom-event-marker',
                 label: 'Project approval and kick-off'
             },
             {
-                day: '04/16/2019',
+                day: '04/10/2019',
                 cssClass: 'e-custom-event-marker',
                 label: 'Project approval and kick-off'
             },
