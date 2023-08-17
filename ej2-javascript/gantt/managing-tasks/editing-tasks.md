@@ -152,3 +152,40 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 {% previewsample "page.domainurl/code-snippet/gantt/editing-cs3" %}
 {% endif %}
+
+## Capture the modified records in gantt component
+
+In the EJ2 Gantt chart, users can easily retrieve modified records after editing data by harnessing the power of the [`actionBegin`] (../../api/gantt/iActionBeginEventArgs/) event in conjunction with the beforeSave [`requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype). By leveraging the [`modifiedRecords`] (../../api/gantt/iActionBeginEventArgs/#modifiedrecords) property, the edited record values can be effortlessly logged to the console for further analysis.
+
+The following code example serves as a practical illustration of how to effectively capture the modified records within the Gantt control.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/capturerecords-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/capturerecords-cs1" %}
+{% endif %}
+
+The following screenshot represents the sample edit record value in console.
+
+![Console](images/captureedit-console.png)
