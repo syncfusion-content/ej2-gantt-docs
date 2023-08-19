@@ -11,11 +11,11 @@ var ganttChart = new ej.gantt.Gantt({
             progress: 'Progress',
             child: 'subtasks'
         },
-		editSettings: {
-              allowEditing: true,
-	      allowTaskbarEditing:true,
-              mode:'Auto'
-            },
+	editSettings: {
+            allowEditing: true,
+            allowTaskbarEditing:true,
+            mode:'Auto'
+        },
         actionBegin(args) {
             if (args.requestType == 'beforeSave') {
                 console.log(args.modifiedRecords);
