@@ -19,7 +19,7 @@ let gantt: Gantt = new Gantt({
         allowEditing: true,
         mode: 'Auto'
     },
-    actionBegin(args: any) {
+    actionBegin: function(args: any) {
         if (args.requestType == 'beforeSave') {
             console.log(args.modifiedRecords);
         }
