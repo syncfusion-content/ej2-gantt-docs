@@ -12,7 +12,6 @@ let gantt: Gantt = new Gantt({
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
-        dependency: 'Predecessor',
         child: 'subtasks'
     },
     editSettings: {
