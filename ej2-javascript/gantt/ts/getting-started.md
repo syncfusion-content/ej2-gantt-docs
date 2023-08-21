@@ -42,7 +42,7 @@ npm install
 
 ## Configuring system JS
 
-[Syncfusion Gantt packages](#dependencies) have to be mapped in the `system.config.js` configuration file.
+[Syncfusion Gantt packages](https://ej2.syncfusion.com/documentation/gantt/getting-started#dependencies) have to be mapped in the `system.config.js` configuration file.
 
 ```javascript
 System.config({
@@ -174,7 +174,7 @@ Now, add an HTML div element to act as the gantt element in `index.html` using t
 
 ## Binding Gantt with data
 
-Bind data with the Gantt control by using the [`dataSource`](../api/gantt/#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
+Bind data with the Gantt control by using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/gantt/#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
 
 ```html
 <!DOCTYPE html>
@@ -242,7 +242,7 @@ gantt.appendTo('#Gantt');
 
 ## Mapping task fields
 
-The data source fields that are required to render the tasks are mapped to the Gantt control using the [`taskFields`](../api/gantt/#taskfields) property.
+The data source fields that are required to render the tasks are mapped to the Gantt control using the [`taskFields`](https://ej2.syncfusion.com/documentation/api/gantt/#taskfields) property.
 
 ```ts
 import { Gantt} from '@syncfusion/ej2-gantt';
@@ -296,15 +296,15 @@ gantt.appendTo('#Gantt');
 
 To create a Gantt with additional features, inject the required modules. The following modules are used to extend the Gantt's basic functionality:
 
-* [`Edit`](../api/gantt/#editmodule): Inject this module to use the editing feature.
-* [`Filter`](../api/gantt/#filtermodule): Inject this module to use the filtering feature.
-* [`Sort`](../api/gantt/#sortmodule): Inject this module to use the sorting feature.
+* [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule): Inject this module to use the editing feature.
+* [`Filter`](https://ej2.syncfusion.com/documentation/api/gantt/#filtermodule): Inject this module to use the filtering feature.
+* [`Sort`](https://ej2.syncfusion.com/documentation/api/gantt/#sortmodule): Inject this module to use the sorting feature.
 
 These modules should be injected into the Gantt using the `Gantt.Inject` method.
 
 ## Enable editing
 
-The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [`editSettings.allowEditing`](../api/gantt/editSettings/#allowediting) and [`editSettings.allowTaskbarEditing`](../api/gantt/editSettings/#allowtaskbarediting) properties.
+The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [`editSettings.allowEditing`](https://ej2.syncfusion.com/documentation/api/gantt/editSettings/#allowediting) and [`editSettings.allowTaskbarEditing`](https://ej2.syncfusion.com/documentation/api/gantt/editSettings/#allowtaskbarediting) properties.
 
 The following editing options are available to update the tasks in Gantt:
 
@@ -315,7 +315,7 @@ The following editing options are available to update the tasks in Gantt:
 
 ### Cell editing
 
-Modify the task details through cell editing by setting the edit [`mode`](../api/gantt/editSettings/#mode) to `Auto`. Inject the [`Edit`](../api/gantt/#editmodule) module as follows. If the [`Edit`](../api/gantt/#editmodule) module is not injected, you cannot edit the cell when a grid cell is clicked.
+Modify the task details through cell editing by setting the edit [`mode`](https://ej2.syncfusion.com/documentation/api/gantt/editSettings/#mode) to `Auto`. Inject the [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule) module as follows. If the [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the cell when a grid cell is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -332,7 +332,7 @@ Modify the task details through cell editing by setting the edit [`mode`](../api
 
 ### Dialog editing
 
-Modify the task details through dialog by setting the edit [`mode`](../api/gantt/editSettings/#mode) to `Dialog`. Inject the [`Edit`](../api/gantt/#editmodule) module as follows. If the [`Edit`](../api/gantt/#editmodule) module is not injected, you cannot edit the task details through the edit dialog.
+Modify the task details through dialog by setting the edit [`mode`](https://ej2.syncfusion.com/documentation/api/gantt/editSettings/#mode) to `Dialog`. Inject the [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule) module as follows. If the [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the task details through the edit dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -349,7 +349,7 @@ Modify the task details through dialog by setting the edit [`mode`](../api/gantt
 
 ### Taskbar editing
 
-Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`allowTaskbarEditing`](../api/gantt/editSettings/#allowtaskbarediting) property. Inject the [`Edit`](../api/gantt/#editmodule) module as follows. If the [`Edit`](../api/gantt/#editmodule) module is not injected, you cannot edit the task details while dragging the taskbar.
+Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`allowTaskbarEditing`](https://ej2.syncfusion.com/documentation/api/gantt/editSettings/#allowtaskbarediting) property. Inject the [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule) module as follows. If the [`Edit`](https://ej2.syncfusion.com/documentation/api/gantt/#editmodule) module is not injected, you cannot edit the task details while dragging the taskbar.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -364,7 +364,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 ### Dependency editing
 
-Modify the task dependencies using mouse interactions by enabling the [`allowTaskbarEditing`](../api/gantt/editSettings/#allowtaskbarediting)  property along with mapping the task dependency data source field to the [`dependency`](../api/gantt/taskFields/#dependency) property.
+Modify the task dependencies using mouse interactions by enabling the [`allowTaskbarEditing`](https://ej2.syncfusion.com/documentation/api/gantt/editSettings/#allowtaskbarediting)  property along with mapping the task dependency data source field to the [`dependency`](https://ej2.syncfusion.com/documentation/api/gantt/taskFields/#dependency) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -379,7 +379,7 @@ Modify the task dependencies using mouse interactions by enabling the [`allowTas
 
 ## Enable filtering
 
-The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [`allowFiltering`](../api/gantt/#allowfiltering) property to true along with injecting the [`Filter`](../api/gantt/#filtermodule) module as shown in the following code example. Filtering feature can also be customized using the [`filterSettings`](../api/gantt/filterSettings/) property.
+The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [`allowFiltering`](https://ej2.syncfusion.com/documentation/api/gantt/#allowfiltering) property to true along with injecting the [`Filter`](https://ej2.syncfusion.com/documentation/api/gantt/#filtermodule) module as shown in the following code example. Filtering feature can also be customized using the [`filterSettings`](https://ej2.syncfusion.com/documentation/api/gantt/filterSettings/) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -394,7 +394,7 @@ The filtering feature enables you to view the reduced amount of records based on
 
 ## Enable sorting
 
-The sorting feature enables you to order the records. It can be enabled by setting the [`allowSorting`](../api/gantt/#allowsorting) property to `true`. Inject the [`Sort`](../api/gantt/#sortmodule) module as follows. If the [`Sort`](../api/gantt/#sortmodule) module is not injected, you cannot sort the records when a header is clicked. The sorting feature can be customized using the [`sortSettings`](../api/gantt/sortSettings/) property.
+The sorting feature enables you to order the records. It can be enabled by setting the [`allowSorting`](https://ej2.syncfusion.com/documentation/api/gantt/#allowsorting) property to `true`. Inject the [`Sort`](https://ej2.syncfusion.com/documentation/api/gantt/#sortmodule) module as follows. If the [`Sort`](https://ej2.syncfusion.com/documentation/api/gantt/#sortmodule) module is not injected, you cannot sort the records when a header is clicked. The sorting feature can be customized using the [`sortSettings`](https://ej2.syncfusion.com/documentation/api/gantt/sortSettings/) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -415,7 +415,7 @@ Predecessor or task dependency in the Gantt control is used to depict the relati
 * Start to Finish (SF): You cannot finish a task until the dependent task finishes.
 * Finish to Start (FS): You cannot start a task until the dependent task completes.
 * Finish to Finish (FF): You cannot finish a task until the dependent task completes.
-You can show the relationship in tasks by using the [`dependency`](../api/gantt/taskFields/#dependency) property as shown in the following code example.
+You can show the relationship in tasks by using the [`dependency`](https://ej2.syncfusion.com/documentation/api/gantt/taskFields/#dependency) property as shown in the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -430,7 +430,7 @@ You can show the relationship in tasks by using the [`dependency`](../api/gantt/
 
 ## Assigning resources
 
-You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`resources`](../api/gantt/#resources) property. Map these fields to the Gantt control using the [`resourceFields`](../api/gantt/#resourceFields) property.
+You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`resources`](https://ej2.syncfusion.com/documentation/api/gantt/#resources) property. Map these fields to the Gantt control using the [`resourceFields`](https://ej2.syncfusion.com/documentation/api/gantt/#resourceFields) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
