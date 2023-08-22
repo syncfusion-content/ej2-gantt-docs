@@ -1,4 +1,4 @@
-ej.gantt.Gantt.Inject(ej.gantt.Edit);
+ej.gantt.Gantt.Inject(ej.gantt.DayMarkers);
 var ganttChart = new ej.gantt.Gantt({
         dataSource: GanttData,
 	height:'450px',

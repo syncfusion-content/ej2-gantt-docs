@@ -1,10 +1,10 @@
 
 
 
-import { Gantt, Edit } from '@syncfusion/ej2-gantt';
+import { Gantt, DayMarkers } from '@syncfusion/ej2-gantt';
 import { GanttData } from 'datasource.ts';
 
-Gantt.Inject(Edit);
+Gantt.Inject(DayMarkers);
 
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
