@@ -77,6 +77,37 @@ A row can also be added above, below or child of the selected row by using conte
 {% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs1" %}
 {% endif %}
 
+## Events fired during CRUD actions
+
+ActionBegin and actioncomplete event gets triggered for crud operations like add, edit, delete, indent/outdent, drag and drop. For these gantt action, you can fetch neccessary details in actionBegin and actioncomplete event arguments.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/managingTasks-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/managingTasks-cs5" %}
+{% endif %}
+
 ## Using method
 
 You can add rows to the Gantt control dynamically using the [`addRecord`](../../api/gantt/#addrecord) method and you can define the add position of the default new record by using the [`rowPosition`](../../api/gantt/rowPosition/) property. You can also pass the `rowIndex` as an additional parameter.
