@@ -82,3 +82,46 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 {% previewsample "page.domainurl/code-snippet/gantt/exporting-blob-data-cs1" %}
 {% endif %}
+
+## Changing taskbar progress color during pdf export
+
+To change the taskbar progress color specifically for PDF export in the Syncfusion Gantt component, you can utilize the [`pdfQueryTaskbarInfo`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#pdfquerytaskbarinfo) event. This event allows you to customize the appearance of taskbars in the PDF output.
+
+### Customizing taskbar progress color
+
+In the `pdfQueryTaskbarInfo` event handler, you can customize the progressColor property of the taskbar to set the desired color for the taskbar progress. Below is an example of how to do this:
+
+```js
+pdfQueryTaskbarInfo: function(args) 
+{
+    args.taskbar.progressColor = new PdfColor(255, 85, 85);
+}
+
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
+{% endif %}
