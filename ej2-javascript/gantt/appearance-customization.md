@@ -340,3 +340,50 @@ In Gantt, we can change the splitter position dynamically by using [`setSplitter
 
 {% previewsample "page.domainurl/code-snippet/gantt/changeSplitterDynamically-cs1" %}
 {% endif %}
+
+## Customizing baseline appearance
+
+The [`queryTaskbarInfo`](https://ej2.syncfusion.com/documentation/api/gantt/#querytaskbarinfo) function in your Gantt chart provides a convenient way to customize the appearance of baselines. This function allows you to access baseline elements and apply style modifications to meet your project's visual requirements.
+
+### Accessing baseline elements
+
+The `queryTaskbarInfo` function allows you to access baseline elements associated with taskbars in your Gantt chart. You can customize the baseline appearance by modifying its style properties. Here's an example of changing the background color of the baseline.
+
+```ts
+queryTaskbarInfo: function(args) 
+{
+	var element = args.rowElement.querySelector('.e-baseline-bar ');
+    if (element) 
+    {
+        element.style.background = 'linear-gradient(red, yellow)';
+    }
+}
+
+```
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/appearanceandstyling-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/appearanceandstyling-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/appearanceandstyling-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/appearanceandstyling-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/appearanceandstyling-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/appearanceandstyling-cs5" %}
+{% endif %}
