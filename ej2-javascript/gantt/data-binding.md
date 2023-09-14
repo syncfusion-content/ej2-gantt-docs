@@ -171,7 +171,7 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ```
 
-### Load Child on Demand
+### Load child on demand
 
 To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [`hasChildMapping`](https://ej2.syncfusion.com/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields of Gantt Chart.
 
