@@ -83,7 +83,7 @@ step 2: Then , `pdfExpComplete` return as blob object.
 {% previewsample "page.domainurl/code-snippet/gantt/exporting-blob-data-cs1" %}
 {% endif %}
 
-## Single Page Exporting in Gantt
+## Single page exporting in gantt
 
 In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting [`isFitToWidth`](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/#isFitToWidth) as true in <code>fitToWidthSettings</code> of <code>PdfExportProperties</code>.
 
