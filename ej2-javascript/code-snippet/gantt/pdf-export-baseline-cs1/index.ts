@@ -14,13 +14,6 @@ let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
     }
 };
 
-let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
-    if(args.data.Progress < 50 && !args.data.hasChildRecords) {
-        args.taskbar.progressColor = new PdfColor(205, 92, 92);
-        args.taskbar.taskColor =  args.taskbar.taskBorderColor = new PdfColor(240, 128, 128);
-    }
-};
-
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
