@@ -115,3 +115,34 @@ Also, we can customize the chart width and grid width in exported file using [`c
 
 {% previewsample "page.domainurl/code-snippet/gantt/single-page" %}
 {% endif %}
+
+## Exporting Gantt data into PDF with baseline
+
+In Gantt, you can export Gantt data to PDF document with baseline. You can customize or format baseline by using the [`pdfQueryTaskbarInfo`](../../api/gantt/#pdfquerytaskbarinfo) event.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-baseline-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-baseline-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-baseline-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-baseline-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-baseline-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-baseline-cs1" %}
+{% endif %}
