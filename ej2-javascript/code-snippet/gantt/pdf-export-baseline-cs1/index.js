@@ -3,14 +3,6 @@ var clickHandler = function(args){
      ganttChart.pdfExport();
    }
 };
-
-var pdfQueryTaskbarInfo =  function(args){
-   if(args.data.Progress < 50 && !args.data.hasChildRecords) {
-        args.taskbar.progressColor = new ej.pdfexport.PdfColor(205, 92, 92);
-        args.taskbar.taskColor =  args.taskbar.taskBorderColor = new ej.pdfexport.PdfColor(240, 128, 128);
-    }
-};
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '450px',
