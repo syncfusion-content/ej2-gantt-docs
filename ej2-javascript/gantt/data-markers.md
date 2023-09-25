@@ -50,3 +50,37 @@ The following code example demonstrates how to implement data markers in the Gan
 
 {% previewsample "page.domainurl/code-snippet/gantt/data-markers-cs1" %}
 {% endif %}
+
+## Binding click event for Data markers
+
+To bind the click event for Data markers, one can make use of the [`dataBound`](../api/gantt/#databound) event, Inside the event you can bind the click event for the data markers using the class e-indicator-span.
+
+The following code example demonstrates how to implement click event for data markers in the Gantt chart.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/data-markers-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/data-markers-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/data-markers-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/data-markers-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/data-markers-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/data-markers-cs2" %}
+{% endif %}
+
