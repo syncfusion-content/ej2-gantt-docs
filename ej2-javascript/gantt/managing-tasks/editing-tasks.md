@@ -152,3 +152,50 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 {% previewsample "page.domainurl/code-snippet/gantt/editing-cs3" %}
 {% endif %}
+
+## Capture the modified records in gantt component
+
+In the EJ2 Gantt chart, users can easily retrieve modified records after adding, editing, or deleting data by utilizing the [`actionComplete`] (../../api/gantt/iActionBeginEventArgs/) event.
+
+The following code example serves as a practical illustration of how to effectively capture the modified records within the Gantt control.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/capturerecords-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/capturerecords-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/capturerecords-cs1" %}
+{% endif %}
+
+The following screenshots represent sample add, edit, and delete record actions using the gantt `args`.
+
+The data of the newly added record can be obtained by comparing the value of [`args.requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype) to the action `add` and the following screenshot shows that the added record's data is available in [`args.newTaskData`].
+
+![Add action](images/add-action.png)
+
+The data of the edited record can be obtained by comparing the value of [`args.requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype) to the action `save` and the following screenshot shows that the edited record's data is available in [`args.modifiedTaskData`] (../../api/gantt/iActionBeginEventArgs/#modifiedtaskdata) property.
+
+![Edit action](images/edit-action.png)
+
+The data of the deleted record can be obtained by comparing the value of [`args.requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype) to the action `delete` and the following screenshot shows that the deleted record's data is available in [`args.modifiedRecords`] (../../api/gantt/iActionBeginEventArgs/#modifiedrecords) property.
+
+![Delete action](images/delete-action.png)
