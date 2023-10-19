@@ -151,10 +151,6 @@ Bind data with the Gantt control by using the [`dataSource`](https://ej2.syncfus
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
 </head>
 
 <body>
