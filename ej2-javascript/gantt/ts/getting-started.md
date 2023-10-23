@@ -32,15 +32,23 @@ Following is the list of minimum dependencies required to use the gantt:
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -48,9 +56,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Import the Syncfusion CSS styles
 
@@ -58,9 +70,13 @@ Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusio
 
 The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
 
-```
-  @import "../../node_modules/@syncfusion/ej2/material.css";
-```
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../../node_modules/@syncfusion/ej2/material.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
 
@@ -70,7 +86,9 @@ You can start adding Essential JS 2 Gantt component to the application. To get s
 
 Place the following gantt code in the `app.ts`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 let gantt: Gantt = new Gantt({
@@ -112,11 +130,14 @@ let gantt: Gantt = new Gantt({
 
  gantt.appendTo('#Gantt');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 Now, add an HTML div element to act as the gantt element in `index.html` using the following code.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,13 +156,16 @@ Now, add an HTML div element to act as the gantt element in `index.html` using t
 
 </html>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Binding Gantt with data
 
 Bind data with the Gantt control by using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/gantt/#datasource) property. It accepts an array of JavaScript object or the DataManager instance.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -162,11 +186,13 @@ Bind data with the Gantt control by using the [`dataSource`](https://ej2.syncfus
 
 </html>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-Place the following code in the `index.ts`.
+Place the following code in the `app.ts`.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 let data: Object[]  = [
         {
@@ -199,13 +225,16 @@ let data: Object[]  = [
 
 gantt.appendTo('#Gantt');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Mapping task fields
 
 The data source fields that are required to render the tasks are mapped to the Gantt control using the [`taskFields`](https://ej2.syncfusion.com/documentation/api/gantt/#taskfields) property.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Gantt} from '@syncfusion/ej2-gantt';
 
 let gantt: Gantt = new Gantt({
@@ -224,7 +253,8 @@ let gantt: Gantt = new Gantt({
 
 gantt.appendTo('#Gantt');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Defining columns
 
@@ -235,7 +265,9 @@ Gantt has an option to define columns as an array. You can customize the Gantt c
 * `textAlign`: Changes the alignment of columns. By default, columns will be left aligned. To change the columns to right align, set `textAlign` to right.
 * `format`: Formats the number and date values to standard or custom formats. Here, it is defined for the conversion of numeric values to currency.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { data } from 'datasource.ts';
 
@@ -251,7 +283,8 @@ let gantt: Gantt = new Gantt({
 });
 gantt.appendTo('#Gantt');
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Module injection
 
@@ -408,9 +441,13 @@ You can display and assign the resource for each task in the Gantt control. Crea
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Output will be displayed as follows.
 
