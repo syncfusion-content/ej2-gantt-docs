@@ -155,7 +155,7 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 ## Capture the modified records in gantt component
 
-In the EJ2 Gantt chart, users can easily retrieve modified records after adding, editing, or deleting data by utilizing the [`actionComplete`] (../../api/gantt/actionCompleteArgs/) event.
+In the EJ2 Gantt chart, modified records can be conveniently retrieved after adding, editing, or deleting data by utilizing the [`actionComplete`] (../../api/gantt/actionCompleteArgs/) event.
 
 The following code example serves as a practical illustration of how to effectively capture the modified records within the Gantt control.
 
