@@ -121,5 +121,5 @@ var ganttChart = new ej.gantt.Gantt({
     },
 });
 
-gantt.appendTo('#Gantt');
+ganttChart.appendTo('#Gantt');
 
