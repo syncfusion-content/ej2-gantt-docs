@@ -25,20 +25,11 @@ var ganttChart = new ej.gantt.Gantt({
         },
 });
 function loadCultureFiles() {
-        var files = ['ca-gregorian.json', 'numbers.json'];
-        var loader = ej.base.loadCldr;
-        var loadCulture = function (prop) {
-            var val, ajax;
-            ajax = new ej.base.Ajax('./' + files[prop], 'GET', false);
-            ajax.onSuccess = function (value) {
-                val = value;
-            };
-            ajax.send();
-            loader(JSON.parse(val));
-        };
-        for (var prop = 0; prop < files.length; prop++) {
-            loadCulture(prop);
-        }
+    var files = [loaderJson, numberJson];
+    var loader = ej.base.loadCldr;
+    for (var prop = 0; prop < files.length; prop++) {
+        loader(JSON.parse(files[prop]));
+    }
 }
 ganttChart.appendTo('#Gantt');
 

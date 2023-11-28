@@ -1,4 +1,4 @@
- var gantt = new index_1.Gantt({
+ var gantt = new ej.gantt.Gantt({
         dataSource: [
             {
                 taskID: 1,
@@ -134,5 +134,5 @@ function actionComplete(args) {
         console.log(args.data.ganttProperties.endDate);
 	}
 }
-ganttChart.appendTo('#Gantt');
+gantt.appendTo('#Gantt');
 
