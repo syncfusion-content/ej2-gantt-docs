@@ -16,7 +16,7 @@ var gantt = new ej.gantt.Gantt({
       parentID: 'parentID',
     },
     actionFailure: (e) => {
-       let span: HTMLElement = document.createElement('span');
+       let span = document.createElement('span');
        gantt.element.parentNode.insertBefore(span, gantt.element);
        span.style.color = '#FF0000'
        span.innerHTML = 'Server exception: 404 Not found';

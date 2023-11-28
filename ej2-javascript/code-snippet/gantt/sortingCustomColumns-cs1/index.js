@@ -1,4 +1,4 @@
-GanttData: Object[]  = [
+var GanttData = [
         {
             TaskID: 1,
             TaskName: 'Project Initiation',
@@ -44,7 +44,7 @@ GanttData: Object[]  = [
         { field: 'CustomColumn', headerText: 'CustomColumn' }
     ]
 });
-gantt.appendTo('#Gantt');
+ganttChart.appendTo('#Gantt');
 
 var sortBtn= new ej.buttons.Button();
 sortBtn.appendTo('#sortColumn');
