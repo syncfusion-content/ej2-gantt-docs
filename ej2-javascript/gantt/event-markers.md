@@ -73,7 +73,7 @@ When [`eventMarkers`](../api/gantt/eventMarker/) are given in consecutive dates 
 {% previewsample "page.domainurl/code-snippet/gantt/event-markers-cs2" %}
 {% endif %}
 
-# Label positions in ##Platform_Name## gantt control
+## Label positions in ##Platform_Name## gantt control
 
 The EJ2 Gantt chart offers powerful features for customizing various labels position within the chart, enabling users to present relevant project information clearly. In EJ2 Gantt chart, labelSettings feature provides three key options for label customization: [`rightLabel`](../api/gantt/labelSettings/#rightlabel), [`taskLabel`](../api/gantt/labelSettings/#tasklabel), and [`leftLabel`](../api/gantt/labelSettings/#leftlabel). Label positions can be initialized by using the [`labelSettings`](../api/gantt/labelSettings/) property. 
 
@@ -106,7 +106,7 @@ The following code example shows how to add label positions in the gantt control
 {% previewsample "page.domainurl/code-snippet/gantt/label-position-cs1" %}
 {% endif %}
 
-# Managing event marker overlapping in ##Platform_Name## gantt control
+## Managing event marker overlapping in ##Platform_Name## gantt control
 
 In the EJ2 Gantt control, it is possible to customize multiple [`eventMarkers`](../api/gantt/eventMarker/) for the same date. However, by default, in such scenarios, these markers may overlap each other, resulting in visual clutter. To manage this, the following sample code demonstrates how to utilize the Gantt dataBound function to obtain label and arrow classes. It performs a loop action to fulfill the current requirement and to avoid overlapping. For further clarification, the code snippet below illustrates the flow of its implementation.
 
