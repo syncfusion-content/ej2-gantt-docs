@@ -35,7 +35,7 @@ Open the command prompt from the required directory, and run the following comma
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack
 
 {% endhighlight %}
 {% endtabs %}
@@ -45,7 +45,7 @@ After cloning the application in the `ej2-quickstart` folder, run the following 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
 
-cd ej2-quickstart
+cd ej2-quickstart-webpack
 
 {% endhighlight %}
 {% endtabs %}
