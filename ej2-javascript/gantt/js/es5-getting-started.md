@@ -219,7 +219,7 @@ In this document context, `ej2.min.js` and `material.css` which includes all the
        <head>
             <title>Essential JS 2 Gantt</title>
             <!-- Essential JS 2 all material theme -->
-            <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
+            <link href="https://cdn.syncfusion.com/ej2/23.1.44/material.css" rel="stylesheet" type="text/css"/>
              <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
