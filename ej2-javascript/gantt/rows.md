@@ -362,8 +362,6 @@ This mode can be enable by setting the `allowTaskbarDragAndDrop` property to `tr
 
 To use row drag and drop feature, inject the `RowDD` and `Edit` module in Gantt.
 
-The following code example shows how to drag and drop a row on button click action.
-
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
