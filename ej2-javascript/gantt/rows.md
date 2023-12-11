@@ -354,6 +354,43 @@ The following code example shows how to drag and drop a row on button click acti
 {% previewsample "page.domainurl/code-snippet/gantt/dynamicDrag-cs1" %}
 {% endif %}
 
+### Perform taskbar drag and drop
+
+Gantt provides option to perform taskbar drag allows users to conveniently organize and manage applications on the taskbar by moving and rearranging their positions using a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+
+This mode can be enable by setting the `allowTaskbarDragAndDrop` property to `true`.
+
+To use row drag and drop feature, inject the `RowDD` and `Edit` module in Gantt.
+
+The following code example shows how to drag and drop a row on button click action.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/dynamicDrag-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/dynamicDrag-cs2" %}
+{% endif %}
+
 ## Customize rows
 
 You can customize the appearance of a row in grid side, by using the [`rowDataBound`](../api/gantt/#rowdatabound) event and in chart side by using [`queryTaskbarInfo`](../api/gantt/#querytaskbarinfo) event

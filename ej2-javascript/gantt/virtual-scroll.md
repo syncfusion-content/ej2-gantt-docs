@@ -48,6 +48,39 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 {% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs3" %}
 {% endif %}
 
+## Timeline Virtualization
+
+Timeline virtualization allows you to load data sources having a large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
+
+This mode can be enable by setting the `enableTimelineVirtualization` property to `true`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs5" %}
+{% endif %}
+
 ## Get filtered data when virtual scrolling is enabled
 
 While enabling virtual scroll you can get the filtered or sorted record count using `filteredResult` from the filterModule of the treegrid inside the `actionComplete` event.
