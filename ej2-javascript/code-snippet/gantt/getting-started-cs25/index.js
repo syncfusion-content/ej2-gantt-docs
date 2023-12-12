@@ -18,7 +18,8 @@ var ganttChart = new ej.gantt.Gantt({
         columns: [
             { field: 'TaskID' },
             { field: 'TaskName', validationRules: { required: true, minLength: [customFn, 'Value should be within 8 letters'] } },
-            { field: 'StartDate', validationRules: { required: true }},
+            { field: 'StartDate',editType: 'datetimepickeredit', edit: { params: { format: 'M/d/y hh:mm a' } },
+            format: { format: 'M/d/y hh:mm a', type: 'dateTime' }, validationRules: { required: true, date: true } },
             { field: 'Duration', validationRules: { required: true } },
             { field: 'Progress', validationRules: { required: true } }
         ],
