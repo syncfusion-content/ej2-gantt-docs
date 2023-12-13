@@ -490,3 +490,178 @@ PDF export provides an option to customize the Gantt style for the exported PDF 
 
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs13" %}
 {% endif %}
+
+### Adding header and footer
+
+You can customize text, page number, line and image in header and footer.
+
+#### Write a text in header and footer
+
+You can add text either in Header or Footer of exported PDF document.
+
+```ts
+
+let exportProperties: PdfExportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Text',
+                value: 'INVOICE',
+                position: { x: 380, y: 0 },
+                style: { textBrushColor: '#C25050', fontSize: 25 },
+            },
+
+        ]
+    }
+
+```
+
+
+#### Draw a line in header and footer
+
+you can add line either in Header or Footer of the exported PDF document.
+
+Supported line styles:
+* dash
+* dot
+* dashdot
+* dashdotdot
+* solid
+
+```ts
+
+let exportProperties: PdfExportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Line',
+                style: { penColor: '#000080', penSize: 2, dashStyle: 'Solid' },
+                points: { x1: 0, y1: 4, x2: 685, y2: 4 }
+            }
+        ]
+    }
+}
+
+```
+
+#### Add page number in header and footer
+
+you can add page number either in Header or Footer of exported PDF document.
+
+Supported page number types:
+* LowerLatin - a, b, c,
+* UpperLatin - A, B, C,
+* LowerRoman - i, ii, iii,
+* UpperRoman - I, II, III,
+* Number - 1,2,3.
+
+```ts
+
+ let exportProperties: PdfExportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'PageNumber',
+                pageNumberType: 'Arabic',
+                format: 'Page {$current} of {$total}', //optional
+                position: { x: 0, y: 25 },
+                style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
+            }
+        ]
+    }
+}
+
+```
+
+#### Insert an image in header and footer
+
+Image (Base64 string) can be added in the exported document in header/footer using the `exportProperties`.
+
+```ts
+
+let exportProperties: PdfExportProperties = {
+    header: {
+        fromTop: 0,
+        height: 130,
+        contents: [
+            {
+                type: 'Image',
+                src: image,
+                position: { x: 40, y: 10 },
+                size: { height: 100, width: 250 },
+            }
+        ]
+    }
+}
+
+```
+
+The below code illustrates the pdf export customization.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-customization-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-customization-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-customization-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-customization-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-customization-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-customization-cs1" %}
+{% endif %}
+
+### Exporting with column template
+
+The PDF export functionality allows you to export Grid columns that include images, hyperlinks, and custom text to an PDF document.
+
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](../../api/gantt/pdfQueryCellInfoEventArgs/#hyperlink) and [image](../../api/gantt/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](../../api/gantt/#pdfquerycellinfo) event.
+
+> PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-column-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-column-template-cs1" %}
+{% endif %}
