@@ -52,7 +52,7 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 
 Timeline virtualization allows you to load data sources having a large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
 
-This mode can be enable by setting the `enableTimelineVirtualization` property to `true`.
+This mode can be enable by setting the [`enableTimelineVirtualization`](../api/gantt/#enabletimelinevirtualization) property to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
