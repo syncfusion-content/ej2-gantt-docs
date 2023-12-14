@@ -356,7 +356,7 @@ The following code example shows how to drag and drop a row on button click acti
 
 ### Perform taskbar drag and drop
 
-Gantt provides option to perform taskbar drag allows users to conveniently organize and manage applications on the taskbar by moving and rearranging their positions using a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+Gantt provides option to perform taskbar drag allows users to conveniently organize the records by moving the taskbar and rearranging their positions using a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
 
 This mode can be enable by setting the [allowTaskbarDragAndDrop](../api/gantt/#allowtaskbardraganddrop) property to `true`.
 
