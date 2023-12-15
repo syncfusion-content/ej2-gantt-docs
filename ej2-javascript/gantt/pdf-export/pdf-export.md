@@ -56,7 +56,7 @@ These indicators, represented by images, can be effortlessly defined using the v
 {% include code-snippet/gantt/pdf-export-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs14/index.html %}
+{% include code-snippet/gantt/pdf-export-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -66,10 +66,10 @@ These indicators, represented by images, can be effortlessly defined using the v
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/pdf-export-cs14/index.js %}
+{% include code-snippet/gantt/pdf-export-cs16/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs14/index.html %}
+{% include code-snippet/gantt/pdf-export-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
