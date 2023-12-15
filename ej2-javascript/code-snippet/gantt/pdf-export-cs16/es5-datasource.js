@@ -11,7 +11,7 @@ var GanttData = [
                 {
                     'date': '04/11/2019',
                     'iconClass': 'e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::before',
-                    'name': '<span style="color:red">String Template</span>',
+                    'name': 'Indicator title',
                     'base64':indicatorImage,
                 }
             ],
@@ -31,7 +31,7 @@ var GanttData = [
                 {
                     'date': '04/13/2019',
                     'iconClass': 'e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::before',
-                    'name': '<span style="color:red">String Template</span>',
+                    'name': 'Indicator title',
                     'base64':indicatorImage,
                 }
             ],
