@@ -43,45 +43,11 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
 {% endif %}
-
-## Pdf export with multiple feature
  
-The PDF export functionality enables users to export the Gantt Chart, preserving all specified elements within the chart. Our Gantt feature includes robust support for exporting the Gantt component, covering split tasks, unscheduled tasks, manual tasks, event markers, indicators, and holidays. The following code snippet serves as an illustrative example of the PDF export with these advanced features. 
+## Indicators in PDF exporting 
 
->Note: Indicators can be defined using the following properties:
- 
->* [`base64`](../api/gantt/iIndicator/#base64): Defines the image of indicator in PDF export.
- 
->Note: Indicators PDF Export supports base64 string to export the images.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/pdf-export-cs15/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs15/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs15" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/pdf-export-cs15/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/pdf-export-cs15/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs15" %}
-{% endif %}
-
-## Indicators exporting in gantt
+The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
+These indicators, represented by images, can be effortlessly defined using the versatile [`base64`](../api/gantt/iIndicator/#base64) encoding method sourced directly from the datasource. 
 
 {% if page.publishingplatform == "typescript" %}
 
