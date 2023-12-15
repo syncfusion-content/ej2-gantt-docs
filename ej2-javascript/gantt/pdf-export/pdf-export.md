@@ -46,11 +46,11 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 
 ## Pdf export with multiple feature
  
-The PDF export functionality allows you to export Gantt Chart, including all the specified elements in the Gantt Chart. In Gantt, we have provided support to export the Gantt component with Split task, Unscheduled task, Manual task, Event Markers, Indicators and holidays. The below code illustrates the pdf export with these feature.
+The PDF export functionality enables users to export the Gantt Chart, preserving all specified elements within the chart. Our Gantt feature includes robust support for exporting the Gantt component, covering Split tasks, Unscheduled tasks, Manual tasks, Event Markers, Indicators, and holidays. The following code snippet serves as an illustrative example of the PDF export with these advanced features. 
+
+>Note: Indicators can be defined using the following properties:
  
-Indicators can be defined using the following properties:
- 
-* [`base64`](../api/gantt/iIndicator/#base64): Defines the image of indicator in PDF export.
+>* [`base64`](../api/gantt/iIndicator/#base64): Defines the image of indicator in PDF export.
  
 >Note: Indicators PDF Export supports base64 string to export the images.
 
