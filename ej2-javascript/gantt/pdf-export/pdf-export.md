@@ -47,7 +47,7 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 ## Indicators in PDF exporting 
 
 The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
-These indicators, represented by images, can be effortlessly defined using the versatile [`base64`](../api/gantt/iIndicator/#base64) encoding method sourced directly from the datasource. 
+These indicators, represented by images,can be effortlessly defined using the  [`base64`](https://helpej2.syncfusion.com/javascript/documentation/api/gantt/iIndicator/#base64/) encoding value in the data object of datasource.This data object field should be mapped to indiactor property of task fields.
 
 {% if page.publishingplatform == "typescript" %}
 
