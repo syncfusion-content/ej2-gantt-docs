@@ -17,8 +17,6 @@ PDF export allows exporting Gantt data to PDF document. You need to use the [`pd
 
 To export data to PDF document, inject the `PdfExport` module in Gantt.
 
->Note: Currently, we don't have support for exporting the manually scheduled tasks.
-
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
@@ -45,6 +43,45 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
 {% endif %}
+
+## Pdf export with multiple feature
+ 
+The PDF export functionality allows you to export Gantt Chart, including all the specified elements in the Gantt Chart. In Gantt, we have provided support to export the Gantt component with Split task, Unscheduled task, Manual task, Event Markers, Indicators and holidays. The below code illustrates the pdf export with these feature.
+ 
+Indicators can be defined using the following properties:
+ 
+* [`base64`](../api/gantt/iIndicator/#base64): Defines the image of indicator in PDF export.
+ 
+>Note: Indicators PDF Export supports base64 string to export the images.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-cs15/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs15" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-cs15/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-cs15/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs15" %}
+{% endif %}
+
+
 
 ## Exporting Gantt data as a blob object
 
