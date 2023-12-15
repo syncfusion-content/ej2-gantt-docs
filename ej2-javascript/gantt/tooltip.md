@@ -251,3 +251,51 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](../a
 
 {% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs1" %}
 {% endif %}
+
+#### Preventing Baseline Tooltip Display
+
+In the Gantt chart, the baseline tooltip is automatically rendered when hovering over the baseline bar. However, there might be scenarios where you need to control the visibility of this tooltip based on certain conditions. You can achieve this by utilizing the [`beforeTooltipRender`](https://ej2.syncfusion.com/react/documentation/api/gantt/ganttModel/#beforetooltiprender) event. This event provides you with the opportunity to customize the behavior of the tooltip before it is displayed.
+
+##### Using the beforeTooltipRender Event
+
+The `beforeTooltipRender` event is triggered when hovering over chart elements, including baseline bars. By inspecting the target element's class and applying conditions, you can prevent the baseline tooltip from being displayed.
+
+```typescript
+beforeTooltipRender: function(args) 
+{
+	if (args.args.target.classList.contains("e-baseline-bar")) 
+	{
+		args.cancel = true;
+	}
+}
+
+```
+
+In this code example, the `beforeTooltipRender` function is used to examine the target element's class. If the class contains `e-baseline-bar`, it means the user is hovering over a baseline bar. By setting `args.cancel` to `true`, you prevent the baseline tooltip from being displayed.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/baselineTooltip-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/baselineTooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/baselineTooltip-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/baselineTooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs2" %}
+{% endif %}
