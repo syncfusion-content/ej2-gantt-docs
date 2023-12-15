@@ -120,6 +120,39 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% previewsample "page.domainurl/code-snippet/gantt/editing-cs2" %}
 {% endif %}
 
+## Prevent progress value editing
+
+You can disable editing for a particular column, by setting [`columns.allowEditing`](https://ej2.syncfusion.com/react/documentation/api/gantt/column/#allowEditing) to `false`and restrict the taskbar editing, by setting `args.cancel` to `true` in [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/gantt/actionCompleteArgs/) event based on `taskbarEditAction` .
+
+The following code example shows how to prevent progress editing in the Gantt control.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/editing-cs7/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/editing-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/editing-cs7" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/editing-cs7/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/editing-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/editing-cs7" %}
+{% endif %}
+
 ## Limiting data fields in general tab
 
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [`addDialogFields`](../../api/gantt/#adddialogfields) and [`editDialogFields`](../../api/gantt/#editdialogfields) properties. The data fields are defined with [`type`](../../api/gantt/addDialogFieldSettings/#type) and [`fields`](../../api/gantt/addDialogFieldSettings/#fields) properties.

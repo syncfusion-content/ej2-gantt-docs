@@ -251,3 +251,34 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](../a
 
 {% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs1" %}
 {% endif %}
+
+### Custom tooltip for any element in Gantt Chart
+
+You can render custom tooltip for any elements in the Gantt Chart. In the following example, a custom tooltip is rendered for task labels.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/baselineTooltip-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/baselineTooltip-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/baselineTooltip-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/baselineTooltip-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/baselineTooltip-cs4" %}
+{% endif %}
