@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 
-## Row Virtualization
+## Row virtualization
 
 Row virtualization allows you to load and render a large number of tasks in Gantt with effective performance. In this mode, all tasks are fetched initially from the datasource and rendered in the DOM within a compact viewport area.
 
@@ -48,6 +48,39 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 {% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs3" %}
 {% endif %}
 
+## Timeline virtualization
+
+Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
+
+This mode can be enable by setting the [enableTimelineVirtualization](../api/gantt/#enabletimelinevirtualization) property to `true`.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/virtual-scroll-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs5" %}
+{% endif %}
+
 ## Get filtered data when virtual scrolling is enabled
 
 While enabling virtual scroll you can get the filtered or sorted record count using `filteredResult` from the filterModule of the treegrid inside the `actionComplete` event.
@@ -79,7 +112,7 @@ While enabling virtual scroll you can get the filtered or sorted record count us
 {% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs4" %}
 {% endif %}
 
-## Limitations for Virtual Scroll
+## Limitations for virtual vcroll
 
 * Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
 * Cell selection will not be persisted.

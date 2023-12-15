@@ -205,6 +205,41 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 {% previewsample "page.domainurl/code-snippet/gantt/rows-cs8" %}
 {% endif %}
 
+### Taskbar drag and drop between rows
+
+The Gantt feature empowers users to efficiently reorganize records by seamlessly moving taskbar and rearranging their positions through a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+
+This mode can be enable by setting the [allowTaskbarDragAndDrop](../api/gantt/#allowtaskbardraganddrop) property to `true`.
+
+To use row drag and drop feature, inject the `RowDD` and `Edit` module in Gantt.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/dynamicDrag-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/dynamicDrag-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/dynamicDrag-cs2" %}
+{% endif %}
+
 ### Drag and drop events
 
 We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
