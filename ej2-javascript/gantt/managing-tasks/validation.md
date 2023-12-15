@@ -45,7 +45,7 @@ Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-vali
 
 ## Custom validation
 
-You can define your own custom validation rules for the specific columns by using its callback function to it's [`validation rule`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#defining-custom-rules).
+You can define your own custom validation rules for the specific columns by using callback function to it's [`validation rule`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#defining-custom-rules).
 
 In the below demo, custom validation applied for `TaskName` column.
 
