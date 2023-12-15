@@ -81,7 +81,34 @@ The PDF export functionality enables users to export the Gantt Chart, preserving
 {% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs15" %}
 {% endif %}
 
+## Indicators exporting in gantt
 
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/pdf-export-cs16/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs16" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/pdf-export-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs16" %}
+{% endif %}
 
 ## Exporting Gantt data as a blob object
 

@@ -21,12 +21,12 @@ export let GanttData: Object[]  =  [
         ]
     },
     {
-    TaskID: 4, TaskName: 'Plan timeline', StartDate: new Date('02/04/2019'), EndDate: new Date('02/10/2019'),
+    TaskID: 4, TaskName: 'Plan timeline', StartDate: new Date('04/02/2019'), EndDate: new Date('02/10/2019'),
     Duration: 5, Progress: '60',
     Segments: [
-        { StartDate: new Date('02/04/2019'), Duration: 2 },
-        { StartDate: new Date('02/05/2019'), Duration: 5 },
-        { StartDate: new Date('02/08/2019'), Duration: 3 }
+        { StartDate: new Date('04/04/2019'), Duration: 2 },
+        { StartDate: new Date('04/05/2019'), Duration: 5 },
+        { StartDate: new Date('04/08/2019'), Duration: 3 }
       ]
 },
 
@@ -50,11 +50,11 @@ export let GanttData: Object[]  =  [
         TaskID: 9,
         TaskName: 'Project Initiation',
         StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
+        EndDate: new Date('04/10/2019'),
         subtasks: [
             { TaskID: 10, TaskName: 'Identify Site location', Duration: 3, Progress: 50},
             { TaskID: 12, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Progress: 50   },
             { TaskID: 13, TaskName: 'Soil test approval', EndDate: new Date('04/08/2019'), Progress: 50 },
         ]
     },
-];
+]
