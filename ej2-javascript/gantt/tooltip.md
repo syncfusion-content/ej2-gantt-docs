@@ -159,6 +159,57 @@ The default tooltip in the Gantt control can be customized using the [`tooltipSe
 {% previewsample "page.domainurl/code-snippet/gantt/taskbarTooltip-cs1" %}
 {% endif %}
 
+#### Preventing Taskbar Tooltip Display
+
+In the Gantt chart, taskbar tooltips provide valuable information when hovering over taskbars. However, there might be situations where you want to control the display of these tooltips based on certain conditions. You can accomplish this by leveraging the [`beforeTooltipRender`](https://ej2.syncfusion.com/react/documentation/api/gantt/ganttModel/#beforetooltiprender) event. This event gives you the ability to customize the behavior of the taskbar tooltip before it is shown.
+
+##### Using the beforeTooltipRender Event
+
+The `beforeTooltipRender` event is triggered when hovering over chart elements, including taskbars. By examining the target element's class and applying appropriate conditions, you can prevent the taskbar tooltip from being displayed.
+
+```typescript
+beforeTooltipRender: function(args) 
+{
+    if( args.args.target.classList.contains('e-gantt-child-taskbar') || 
+		args.args.target.classList.contains('e-gantt-parent-taskbar') || 
+		args.args.target.classList.contains('e-taskbar-left-resizer') || 
+		args.args.target.classList.contains('e-taskbar-right-resizer') ) 
+    {
+        args.cancel = true;
+	}
+}
+
+```
+
+In this code snippet, the `beforeTooltipRender` function is employed to analyze the class of the target element. If the class indicates that the user is hovering over a taskbar or its resizers, the taskbar tooltip is prevented from being displayed by setting `args.cancel` to `true`.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/taskbarTooltip-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/taskbarTooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/taskbarTooltip-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/taskbarTooltip-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/taskbarTooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/taskbarTooltip-cs2" %}
+{% endif %}
+
 ### Connector line tooltip
 
 The default connector line tooltip in the Gantt control can be customized using the [`tooltipSettings.connectorLine`](../api/gantt/tooltipSettings/#connectorline) property. You can map the value to this property as template script element ID or template string format. The following code example shows how to use the [`tooltipSettings.connectorLine`](../api/gantt/tooltipSettings/#connectorline) property.
