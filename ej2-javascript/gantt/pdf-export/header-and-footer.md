@@ -15,7 +15,7 @@ PDF export provides an option to specify and customize text, page number, line a
 
 ## Write a text in header and footer
 
-This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to in [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfHeader/) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdfFooter/) of exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/).
+This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfHeader/) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdfFooter/) of exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/).
 
 * `type` property in the content array indicates the content type, such as 'Text'.
 * `Value` property determines the text. 
