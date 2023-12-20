@@ -75,7 +75,7 @@ You can select a row at the time of loading by setting the index of the row to t
 
 ## Selecting a row dynamically
 
-You can also select a row dynamically using the [`selectRow`](../../api/gantt/selection/#selectrow) method. The following code demonstrates how to select a row dynamically by clicking the custom button.
+You can also select a row dynamically using the [`selectRow`](../../api/gantt/selection/#selectrow) method. Similarly, You can also select rows dynamically using the [`selectRows`](../../api/gantt/selection/#selectrows) method. The following code demonstrates how to select a single or multiples row dynamically by clicking the custom button.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -133,37 +133,6 @@ You can select multiple rows by setting the [`selectionSettings.type`](../../api
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/gantt/selection-cs6" %}
-{% endif %}
-
-## Selecting multiple rows dynamically
-
-You can also select rows dynamically using the [`selectRows`](../../api/gantt/selection/#selectrows) method. The following code demonstrates how to select rows dynamically by clicking the custom button.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/selectMultipleRow-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/selectMultipleRow-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/gantt/selectMultipleRow-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/selectMultipleRow-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/selectMultipleRow-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/selectMultipleRow-cs1" %}
 {% endif %}
 
 ## Customize row selection action
