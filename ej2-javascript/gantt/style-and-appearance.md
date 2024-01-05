@@ -50,3 +50,45 @@ Section | CSS Class | Purpose of Class
 **Baseline**|e-baseline-bar|This class is added to the baseline.
 ||e-baseline-gantt-milestone-container|This class is added to the baseline of milestone tasks.
 **Tooltip**|e-gantt-tooltip|This class is added to the tooltip.
+
+## Grid lines
+
+In the Gantt control, you can show or hide the grid lines in the TreeGrid side and chart side by using the [`gridLines`](../api/gantt/gridLine/) property.
+
+The following options are available in the Gantt control for rendering the grid lines:
+
+* Horizontal: The horizontal grid lines alone will be visible.
+* Vertical: The vertical grid lines alone will be visible.
+* Both: Both the horizontal and vertical grid lines will be visible on the TreeGrid and chart sides.
+* None: Gridlines will not be visible on TreeGrid and chart sides.
+
+> By default, the [`gridLines`](../api/gantt/gridLine/) property is set to `Horizontal` type.
+
+The following code example shows how to change the gridlines rendering mode in the Gantt control.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/gridline-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/gridline-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/gridline-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/gridline-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/gridline-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/gridline-cs1" %}
+{% endif %}

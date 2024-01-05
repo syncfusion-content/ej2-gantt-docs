@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Context menu in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Context menu in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Context menu in EJ2 TypeScript Gantt control | Syncfusion
+description: Learn here all about Context menu in Syncfusion EJ2 TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Context menu 
-publishingplatform: ##Platform_Name##
+publishingplatform: EJ2 TypeScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in ##Platform_Name## Gantt control
+# Context menu in EJ2 TypeScript Gantt control
 
 The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the [`enableContextMenu`](../api/gantt/#enablecontextmenu) to true. The default context menu options are enabled using the [`editSettings`](../api/gantt/#editsettings) property. The context menu options can be customized using the [`contextMenuItems`](../api/gantt/#contextmenuitems) property.
 
@@ -95,3 +95,7 @@ The following sample shows context menu item for parent rows to expand or collap
 {% endif %}
 
 > You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.
+
+## Touch interaction
+
+To perform `long press` action on a row, [`context menu`](context-menu/#context-menu) is opened, and then tap a menu item to trigger its action.
