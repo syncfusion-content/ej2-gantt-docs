@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timeline in JavaScript Gantt control | Syncfusion
-description: Learn here all about Timeline in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Timeline in Syncfusion Essential JavaScript Gantt control, its elements and more.
 platform: ej2-javascript
 control: Timeline 
 publishingplatform: JavaScript
