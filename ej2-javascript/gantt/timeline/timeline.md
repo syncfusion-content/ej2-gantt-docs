@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Timeline in ##Platform_Name## Gantt control | Syncfusion
-description: Learn here all about Timeline in Syncfusion ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more.
+title: Timeline in JavaScript Gantt control | Syncfusion
+description: Learn here all about Timeline in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Timeline 
-publishingplatform: ##Platform_Name##
+publishingplatform: JavaScript
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeline in ##Platform_Name## Gantt control
+# Timeline in JavaScript Gantt control
 
 In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
 
