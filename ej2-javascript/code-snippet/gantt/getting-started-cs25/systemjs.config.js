@@ -42,6 +42,8 @@ System.config({
 });
 
 System.import('index.ts').catch(console.error.bind(console)).then(function () {
-    document.getElementById('loader').style.display = "none";
+    if (document.getElementById('loader')) {
+        document.getElementById('loader').style.display = "none";
+    }
     document.getElementById('container').style.visibility = "visible";
 });
