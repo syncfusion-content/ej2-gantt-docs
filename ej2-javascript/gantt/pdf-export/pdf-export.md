@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pdf export in JavaScript Gantt control | Syncfusion
+title: Pdf export in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Pdf export in Syncfusion Essential JavaScript Gantt control, its elements and more.
 platform: ej2-javascript
 control: Pdf export 
-publishingplatform: JavaScript
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pdf export in JavaScript Gantt control
+# Pdf export in JavaScript Gantt Control
 
 ## PDF Export
 
