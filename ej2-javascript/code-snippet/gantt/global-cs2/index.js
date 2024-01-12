@@ -1,3 +1,6 @@
+import * as cagregorian from './ca-gregorian.js';
+import * as numbers from './numbers.js';
+
 var GanttData = [
     {
         TaskID: 1,
@@ -22,6 +25,7 @@ var GanttData = [
         ]
     },
 ];
+ej.base.loadCldr(cagregorian,numbers);
 ej.base.setCulture('de-DE');
 ej.base.L10n.load({
     'de-DE': {
