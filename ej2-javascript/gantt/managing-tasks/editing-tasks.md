@@ -214,7 +214,9 @@ Tasks' value can be dynamically updated by using the [`updateRecordById`](../../
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+![Add action](../images/add-action.png)
+
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt/updateRecordById-cs1/index.ts %}
 {% endhighlight %}
@@ -227,6 +229,8 @@ Tasks' value can be dynamically updated by using the [`updateRecordById`](../../
 
 {% elsif page.publishingplatform == "javascript" %}
 
+![Edit action](../images/edit-action.png)
+
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt/updateRecordById-cs1/index.js %}
@@ -238,3 +242,5 @@ Tasks' value can be dynamically updated by using the [`updateRecordById`](../../
 
 {% previewsample "page.domainurl/code-snippet/gantt/updateRecordById-cs1" %}
 {% endif %}
+
+![Delete action](../images/delete-action.png)
