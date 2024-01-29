@@ -54,7 +54,7 @@ The Gantt supports a set of filtering modes with the [`filterSettings.hierarchyM
 {% previewsample "page.domainurl/code-snippet/gantt/filtering-cs1" %}
 {% endif %}
 
-### Initial filter
+## Initial filter
 
 To apply the filter at initial rendering, set the filter to `predicate` object in the [`filterSettings.columns`](../../api/gantt/filterSettings/#columns) property.
 
@@ -85,7 +85,7 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 {% previewsample "page.domainurl/code-snippet/gantt/initialLoadFiltering-cs4" %}
 {% endif %}
 
-### Filter operators
+## Filter operators
 
 The filter operator for a column can be defined in the `filterSettings.columns.operator` property.
 
@@ -105,7 +105,7 @@ lessthanorequal |Checks whether the value is less than or equal to the specified
 
 > By default, the `filterSettings.columns.operator` value is `equal`
 
-### Diacritics
+## Diacritics
 
 By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](../../api/gantt/filterSettings/#ignoreaccent) to true.
 

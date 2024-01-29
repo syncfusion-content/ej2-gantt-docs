@@ -241,3 +241,34 @@ In the Gantt control, the schedule timeline will be automatically updated when t
 
 {% previewsample "page.domainurl/code-snippet/gantt/timeline-cs7" %}
 {% endif %}
+
+## Timeline cells tooltip
+
+In the Gantt control, you can enable or disable the mouse hover tooltip of timeline cells using the [`timelineSettings.showTooltip`](../api/gantt/timelineSettings/#showtooltip) property. The default value of this property is true. The following code example shows how to enable the timeline cells tooltip in Gantt.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/gantt-tooltip-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/gantt-tooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/gantt-tooltip-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/gantt-tooltip-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/gantt-tooltip-cs2" %}
+{% endif %}

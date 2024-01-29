@@ -89,7 +89,7 @@ Modify the task details through the edit dialog by setting the edit [`mode`](../
 
 `Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
-## Sections or tabs in dialog
+### Sections or tabs in dialog
 
 In the Gantt dialog, you can define the required tabs or editing sections using the [`addDialogFields`](../../api/gantt/#adddialogfields) and [`editDialogFields`](../../api/gantt/#editdialogfields) properties. Every tab is defined using the [`type`](../../api/gantt/dialogFieldType/) property.
 
@@ -120,7 +120,7 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% previewsample "page.domainurl/code-snippet/gantt/editing-cs2" %}
 {% endif %}
 
-## Limiting data fields in general tab
+### Limiting data fields in general tab
 
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [`addDialogFields`](../../api/gantt/#adddialogfields) and [`editDialogFields`](../../api/gantt/#editdialogfields) properties. The data fields are defined with [`type`](../../api/gantt/addDialogFieldSettings/#type) and [`fields`](../../api/gantt/addDialogFieldSettings/#fields) properties.
 
@@ -153,49 +153,94 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 {% previewsample "page.domainurl/code-snippet/gantt/editing-cs3" %}
 {% endif %}
 
-## Capture the modified records in gantt component
+## Task dependencies
 
-In the EJ2 Gantt chart, modified records can be conveniently retrieved after adding, editing, or deleting data by utilizing the [`actionComplete`] (../../api/gantt/actionCompleteArgs/) event.
+In the Gantt control, you can update the dependencies between the tasks and link the tasks interactively. The task dependencies can be mapped from the data source using the [`dependency`](../../api/gantt/taskFields/#dependency) property.
 
-The following code example serves as a practical illustration of how to effectively capture the modified records within the Gantt control.
+You can update the task dependencies using the following ways:
+
+* Mouse interactions: Using connector points in the taskbar, you can perform drag and drop action to create task dependency links.
+* Edit dialog: Create or remove the task dependencies using the `Dependency` tab in the edit dialog.
+* Cell editing: Create or remove the task links using cell editing.
+
+The following code example demonstrates how to enable task dependency editing in the Gantt chart using the [`editSettings`](../../api/gantt/editSettings/) property.
 
 {% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
+ {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/capturerecords-cs1/index.ts %}
+{% include code-snippet/gantt/editing-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/capturerecords-cs1/index.html %}
+{% include code-snippet/gantt/editing-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/gantt/capturerecords-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/editing-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/capturerecords-cs1/index.js %}
+{% include code-snippet/gantt/editing-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/capturerecords-cs1/index.html %}
+{% include code-snippet/gantt/editing-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/capturerecords-cs1" %}
+{% previewsample "page.domainurl/code-snippet/gantt/editing-cs6" %}
 {% endif %}
 
-The following screenshots represent sample add, edit, and delete record actions using the gantt `args`.
+![Alt text](../images/user-interaction.png)
 
-The data of the newly added record can be obtained from actionComplete event by requestType of [`args.requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype) to the action `add` and the following screenshot shows that the added record's data is available in [`args.newTaskData`] (../../api/gantt/actionCompleteArgs/#newtaskdata) property.
+Updating with mouse interaction action
+
+![Alt text](../images/cell-edit.png)
+
+Updating with cell edit
+
+![Alt text](../images/dialog.png)
+
+Updating with dialog
+
+`Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+
+## Update task values using method
+
+Tasks' value can be dynamically updated by using the [`updateRecordById`](../../api/gantt/#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+
+>NOTE: Using the [`updateRecordById`](../../api/gantt/#updaterecordbyid) method, you cannot update the task ID value.
+
+{% if page.publishingplatform == "typescript" %}
 
 ![Add action](../images/add-action.png)
 
-The data of the edited record can be obtained from actionComplete event by requestType of [`args.requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype) to the action `save` and the following screenshot shows that the edited record's data is available in [`args.modifiedTaskData`] (../../api/gantt/iActionBeginEventArgs/#modifiedtaskdata) property.
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/updateRecordById-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/updateRecordById-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/updateRecordById-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
 
 ![Edit action](../images/edit-action.png)
 
-The data of the deleted record can be obtained from actionComplete event by requestType of [`args.requestType`] (../../api/gantt/iActionBeginEventArgs/#requesttype) to the action `delete` and the following screenshot shows that the deleted record's data is available in [`args.modifiedRecords`] (../../api/gantt/iActionBeginEventArgs/#modifiedrecords) property.
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/updateRecordById-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/updateRecordById-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/updateRecordById-cs1" %}
+{% endif %}
 
 ![Delete action](../images/delete-action.png)
