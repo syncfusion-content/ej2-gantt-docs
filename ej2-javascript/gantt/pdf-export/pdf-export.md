@@ -146,9 +146,9 @@ Also, we can customize the chart width and grid width in exported file using [`c
 {% previewsample "page.domainurl/code-snippet/gantt/single-page" %}
 {% endif %}
 
-## Exporting with column template
+## Exporting with templates
 
-### Exporting with template
+### Exporting with column template
 
 The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
 
