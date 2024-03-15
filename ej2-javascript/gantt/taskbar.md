@@ -140,6 +140,41 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 {% previewsample "page.domainurl/code-snippet/gantt/change-gripper-icon-cs1" %}
 {% endif %}
 
+## Multi taskbar support in project view
+
+The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.
+
+This feature can be enabled by setting the [enableMultiTaskbar](../api/gantt/#enablemultitaskbar) property value to `true`. 
+
+The following code example shows how to use this property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/gantt/projectview-multitaskbar-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/projectview-multitaskbar-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/projectview-multitaskbar-cs1" %}
+{% endif %}
+
 ## Connector lines
 
 The width and background color of connector lines in Gantt can be customized using the [`connectorLineWidth`](../api/gantt/#connectorlinewidth) and [`connectorLineBackground`](../api/gantt/#connectorlinebackground) properties. The following code example shows how to use these properties.
