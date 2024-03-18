@@ -29,7 +29,7 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
 (<{ getResourceElements?: Function }>window).getResourceElements = (value: any) => {
     let out: string = '';
     let img: HTMLImageElement = document.createElement('img');
-    img.height = 40;
+    img.height = 20;
     let span: HTMLElement = document.createElement('span');
     span.style.marginLeft = '5px';
     span.style.marginRight = '5px';
@@ -44,8 +44,6 @@ let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
-    rowHeight: 55,
-    taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

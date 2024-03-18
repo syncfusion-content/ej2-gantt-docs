@@ -35,7 +35,7 @@ var pdfQueryTaskbarInfo =  function(args){
 window.getResourceElements = function (value) {
     var out = "";
     var img = document.createElement('img');
-    img.height = 40;
+    img.height = 20;
     var span = document.createElement('span');
     span.style.marginLeft = "5px";
     span.style.marginRight = "5px";
@@ -49,8 +49,6 @@ window.getResourceElements = function (value) {
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '450px',
-    rowHeight: 55,
-    taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
