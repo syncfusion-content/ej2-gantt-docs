@@ -30,8 +30,6 @@ let pdfColumnHeaderQueryCellInfo = (args: PdfColumnHeaderQueryCellInfoEventArgs)
                 base64: value, width: 20, height: 20
             }];
             args.headerTemplate.value = args.column.field;
-            args.headerTemplate.fontStyle.fontSize = 6;
-            args.headerTemplate.fontStyle.fontColor = new PdfColor(255, 0, 0);
             break;
         }
         i++;

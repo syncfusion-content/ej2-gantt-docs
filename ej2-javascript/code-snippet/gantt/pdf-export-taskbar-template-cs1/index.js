@@ -6,7 +6,7 @@ var clickHandler = function (args) {
         ganttChart.pdfExport(exportProperties);
     }
 };
-function pdfQueryTaskbarInfo(args) {
+var pdfQueryTaskbarInfo =  function(args){
     if (!args.data.hasChildRecords) {
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
@@ -31,13 +31,13 @@ function pdfQueryTaskbarInfo(args) {
         }
         args.taskbarTemplate.value = args.data.TaskName
     }
-}
+};
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
+    dataSource: ganttData,
     height: '450px',
-    rowHeight: 45,
-    taskbarHeight: 35,
+    rowHeight: 55,
+    taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

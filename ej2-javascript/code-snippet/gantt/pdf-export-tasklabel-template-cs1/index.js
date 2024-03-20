@@ -6,7 +6,7 @@ var clickHandler = function (args) {
         ganttChart.pdfExport(exportProperties);
     }
 };
-function pdfQueryTaskbarInfo(args) {
+var pdfQueryTaskbarInfo =  function(args){
     if (!args.data.hasChildRecords) {
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
@@ -35,7 +35,7 @@ function pdfQueryTaskbarInfo(args) {
 window.getResourceElements = function (value) {
     var out = "";
     var img = document.createElement('img');
-    img.height = 40;
+    img.height = 20;
     var span = document.createElement('span');
     span.style.marginLeft = "5px";
     span.style.marginRight = "5px";
@@ -49,8 +49,6 @@ window.getResourceElements = function (value) {
 var ganttChart = new ej.gantt.Gantt({
     dataSource: GanttData,
     height: '450px',
-    rowHeight: 45,
-    taskbarHeight: 35,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

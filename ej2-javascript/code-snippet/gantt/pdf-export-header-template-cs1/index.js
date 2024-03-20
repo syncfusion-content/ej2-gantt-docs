@@ -19,8 +19,6 @@ var pdfColumnHeaderQueryCellInfo = function (args) {
                     base64: value, width: 20, height: 20
                 }];
             args.headerTemplate.value = args.column.field;
-            args.headerTemplate.fontStyle.fontSize = 6;
-            args.headerTemplate.fontStyle.fontColor = new ej2_pdf_export_1.PdfColor(255, 0, 0);
             break;
         }
         i++;
