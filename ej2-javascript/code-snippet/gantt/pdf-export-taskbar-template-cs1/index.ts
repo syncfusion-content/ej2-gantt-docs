@@ -1,9 +1,8 @@
 
 
 
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties,pdfQueryTaskbarInfo,PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { GanttData,editingResources } from 'datasource.ts';
-import { PdfColor } from '@syncfusion/ej2-pdf-export';
+import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties } from '@syncfusion/ej2-gantt';
+import { ganttData,editingResources } from 'datasource.ts';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 Gantt.Inject(Toolbar, PdfExport, Selection);
@@ -16,7 +15,7 @@ let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
         gantt.pdfExport(exportProperties);
     }
 };
-function pdfQueryTaskbarInfo(args: pdfQueryTaskbarInfo): any {
+let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
     if(!args.data.hasChildRecords){
         if (args.data.ganttProperties.resourceNames) {
             args.taskbarTemplate.image = [{
@@ -44,10 +43,10 @@ function pdfQueryTaskbarInfo(args: pdfQueryTaskbarInfo): any {
 }
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
+    dataSource: ganttData,
     height: '450px',
-    rowHeight: 45,
-    taskbarHeight: 35,
+    rowHeight: 55,
+    taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

@@ -16,7 +16,7 @@ let clickHandler: EmitType<ClickEventArgs> = (args: ClickEventArgs) => {
         gantt.pdfExport(exportProperties);
     }
 };
-function pdfQueryTaskbarInfo(args: pdfQueryTaskbarInfo): any {
+let pdfQueryTaskbarInfo: EmitType<Object> = (args: Object) => {
     args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
         if (args.data.ganttProperties.resourceNames) {
             args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
@@ -44,8 +44,8 @@ function pdfQueryTaskbarInfo(args: pdfQueryTaskbarInfo): any {
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
-    rowHeight: 45,
-    taskbarHeight: 35,
+    rowHeight: 55,
+    taskbarHeight: 45,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
